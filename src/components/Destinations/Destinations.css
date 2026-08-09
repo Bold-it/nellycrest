@@ -1,0 +1,95 @@
+.destinations {
+  background-color: var(--bg-color);
+}
+
+.dest-intro {
+  max-width: 600px;
+  margin-bottom: var(--spacing-xl);
+}
+
+.dest-intro h5 {
+  color: var(--accent-gold);
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  margin-bottom: var(--spacing-md);
+}
+
+.dest-intro h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: 300;
+  margin-bottom: var(--spacing-md);
+}
+
+.dest-intro p {
+  margin-bottom: var(--spacing-md);
+}
+
+.dest-link {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  display: block;
+}
+
+.dest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.dest-card {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dest-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #23272e;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+
+.dest-card:hover .dest-bg {
+  transform: scale(1.1);
+}
+
+.dest-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(13, 15, 18, 0.9) 0%, rgba(13, 15, 18, 0.2) 100%);
+  z-index: 2;
+}
+
+.dest-content {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dest-icon {
+  font-size: 1.5rem;
+  color: var(--accent-gold);
+}
+
+.dest-content h4 {
+  margin: 0;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+}

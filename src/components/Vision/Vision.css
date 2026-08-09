@@ -1,0 +1,71 @@
+.vision {
+  background-color: var(--bg-color);
+  position: relative;
+}
+
+.vision-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.vision-header h5 {
+  color: var(--accent-gold);
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  margin-bottom: var(--spacing-md);
+}
+
+.vision-header h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--text-primary);
+  font-weight: 300;
+}
+
+.vision-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xxl);
+}
+
+.vision-text {
+  max-width: 800px;
+}
+
+.vision-text p {
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.8;
+}
+
+.vision-text strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.vision-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-xl);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--spacing-xl);
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: var(--accent-gold);
+  opacity: 0.8;
+}
+
+.feature-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  color: var(--text-primary);
+}

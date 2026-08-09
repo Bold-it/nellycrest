@@ -1,0 +1,131 @@
+.masterplan {
+  background-color: var(--surface-color);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.masterplan-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xxl);
+}
+
+.masterplan-header h5 {
+  color: var(--accent-gold);
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  margin-bottom: var(--spacing-md);
+}
+
+.masterplan-header h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: 300;
+  color: var(--text-primary);
+}
+
+.masterplan-desc p {
+  margin-bottom: 1rem;
+}
+
+.masterplan-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 2rem;
+  margin-top: var(--spacing-md);
+}
+
+.masterplan-list li {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.masterplan-list li::before {
+  content: "•";
+  color: var(--accent-gold);
+  position: absolute;
+  left: 0;
+}
+
+.pillars-section {
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  text-align: center;
+}
+
+.pillars-title {
+  color: var(--text-secondary);
+  letter-spacing: 2px;
+  margin-bottom: var(--spacing-xl);
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  text-align: left;
+}
+
+.pillar-card {
+  background: var(--bg-color);
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: transform 0.3s ease;
+}
+
+.pillar-card:hover {
+  transform: translateY(-5px);
+}
+
+.pillar-image {
+  height: 250px;
+  background-color: #2a2e35;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.pillar-number {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.5rem;
+  color: rgba(255,255,255,0.8);
+  font-weight: 300;
+}
+
+.pillar-content {
+  padding: var(--spacing-lg);
+}
+
+.pillar-icon {
+  font-size: 1.5rem;
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+}
+
+.pillar-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.pillar-subtitle {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.pillar-link {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent-gold);
+}
+
+@media (max-width: 992px) {
+  .masterplan-intro {
+    grid-template-columns: 1fr;
+  }
+}
