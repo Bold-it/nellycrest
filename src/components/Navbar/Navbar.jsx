@@ -3,6 +3,7 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,22 +17,39 @@ const Navbar = () => {
     return () => document.removeEventListener('scroll', handleScroll);
   }, [scrolled]);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <div className="logo">
           <a href="#">NELLYCREST</a>
         </div>
-        <ul className="nav-links">
-          <li><a href="#vision">Vision</a></li>
-          <li><a href="#masterplan">Masterplan</a></li>
-          <li><a href="#development">Development</a></li>
-          <li><a href="#destinations">Destinations</a></li>
-          <li><a href="#location">Location</a></li>
-          <li><a href="#investment">Investment</a></li>
-        </ul>
-        <div className="nav-actions">
-          <a href="#investment" className="btn btn-outline">Register Your Interest</a>
+        
+        <button className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu} aria-label="Toggle menu">
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </button>
+
+        <div className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+          <ul className="nav-links">
+            <li><a href="#vision" onClick={closeMenu}>Vision</a></li>
+            <li><a href="#masterplan" onClick={closeMenu}>Masterplan</a></li>
+            <li><a href="#development" onClick={closeMenu}>Development</a></li>
+            <li><a href="#destinations" onClick={closeMenu}>Destinations</a></li>
+            <li><a href="#location" onClick={closeMenu}>Location</a></li>
+            <li><a href="#investment" onClick={closeMenu}>Investment</a></li>
+          </ul>
+          <div className="nav-actions">
+            <a href="#investment" className="btn btn-outline" onClick={closeMenu}>Register Your Interest</a>
+          </div>
         </div>
       </div>
     </nav>
