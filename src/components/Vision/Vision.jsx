@@ -6,8 +6,9 @@ const Vision = () => {
     <section className="section vision" id="vision">
       <div className="container">
         <div className="vision-header">
-          <h5>The Vision</h5>
-          <h2>Building More Than<br />A Development</h2>
+          <span className="section-tag">- - The Vision - -</span>
+          <h2>THE VISION</h2>
+          <p className="section-subtitle">Building More Than a Development</p>
         </div>
         <div className="vision-content">
           <div className="vision-text">

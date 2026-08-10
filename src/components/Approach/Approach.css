@@ -1,0 +1,44 @@
+.approach {
+  background-color: var(--bg-color, #0d0f12);
+  padding: 5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.approach-header {
+  margin-bottom: 2.5rem;
+}
+
+.approach-header h2 {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.approach-subtitle {
+  font-size: 1.15rem;
+  color: var(--color-gold, #cfa86e);
+  font-weight: 300;
+}
+
+.approach-content {
+  max-width: 850px;
+}
+
+.approach-content p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.approach-tagline {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(207, 168, 110, 0.12);
+  border-left: 4px solid var(--color-gold, #cfa86e);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}

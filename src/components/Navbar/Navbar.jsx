@@ -42,13 +42,15 @@ const Navbar = () => {
           <ul className="nav-links">
             <li><a href="#vision" onClick={closeMenu}>Vision</a></li>
             <li><a href="#masterplan" onClick={closeMenu}>Masterplan</a></li>
-            <li><a href="#development" onClick={closeMenu}>Development</a></li>
             <li><a href="#destinations" onClick={closeMenu}>Destinations</a></li>
+            <li><a href="#connectivity" onClick={closeMenu}>Connectivity</a></li>
             <li><a href="#location" onClick={closeMenu}>Location</a></li>
-            <li><a href="#investment" onClick={closeMenu}>Investment</a></li>
+            <li><a href="#the-development" onClick={closeMenu}>Development</a></li>
+            <li><a href="#investment-partnerships" onClick={closeMenu}>Partnerships</a></li>
+            <li><a href="#approach" onClick={closeMenu}>Our Approach</a></li>
           </ul>
           <div className="nav-actions">
-            <a href="#investment" className="btn btn-outline" onClick={closeMenu}>Register Your Interest</a>
+            <a href="#investment-partnerships" className="btn btn-outline" onClick={closeMenu}>Register Your Interest</a>
           </div>
         </div>
       </div>

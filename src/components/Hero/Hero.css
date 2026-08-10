@@ -40,11 +40,33 @@
 }
 
 .hero .subtitle {
-  font-size: 1.125rem;
-  max-width: 500px;
-  margin-bottom: var(--spacing-xl);
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: var(--spacing-md);
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.hero-tag {
+  display: inline-block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-gold, #cfa86e);
+  margin-bottom: var(--spacing-sm);
+}
+
+.hero-description {
+  max-width: 650px;
+  margin-bottom: var(--spacing-xl);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.hero-description p {
+  margin-bottom: 0.75rem;
 }
 
 .hero-actions {

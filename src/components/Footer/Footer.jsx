@@ -11,9 +11,9 @@ const Footer = () => {
             <h2>BE PART OF WHAT COMES NEXT</h2>
             <p>Whether you are an investor, developer, institution, business, professional or future resident, we invite you to stay connected as the vision develops.</p>
             <div className="footer-actions">
-              <a href="mailto:info@wardcapital.com?subject=Register Interest" className="btn btn-primary">REGISTER YOUR INTEREST</a>
-              <a href="mailto:info@wardcapital.com?subject=Partnership Enquiry" className="btn btn-outline">PARTNERSHIP ENQUIRIES</a>
-              <a href="mailto:info@wardcapital.com" className="btn btn-outline">CONTACT US</a>
+              <a href="mailto:info@wardcapital.com?subject=Register Interest" className="btn btn-primary">Register Your Interest</a>
+              <a href="mailto:info@wardcapital.com?subject=Partnership Enquiry" className="btn btn-outline">Partnership Enquiries</a>
+              <a href="mailto:info@wardcapital.com?subject=Contact" className="btn btn-outline">Contact NellyCrest</a>
             </div>
           </div>
         </div>

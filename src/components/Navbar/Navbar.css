@@ -38,19 +38,20 @@
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.25rem;
 }
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .nav-links a {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--text-secondary);
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -60,6 +61,7 @@
 .btn-outline {
   font-size: 0.75rem;
   padding: 0.5rem 1rem;
+  white-space: nowrap;
 }
 
 .hamburger {
@@ -79,7 +81,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1100px) {
   .hamburger {
     display: block;
   }
@@ -106,12 +108,12 @@
   .nav-links {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     margin-bottom: 2rem;
   }
 
   .nav-links a {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color: var(--text-primary);
   }
 
