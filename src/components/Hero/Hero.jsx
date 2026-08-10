@@ -10,7 +10,6 @@ const Hero = () => {
           
           {/* Left Column: Headlines & Call to Action */}
           <div className="hero-left">
-            <span className="hero-tag">- - The Landing Page - -</span>
             <h1 className="hero-brand">NELLYCREST</h1>
             <h2 className="hero-title">A New Chapter for Urban Development</h2>
             <p className="hero-subtitle">
