@@ -7,7 +7,7 @@ const Destinations = () => {
       name: "PUBLIC AQUARIUM", 
       desc: "showcasing marine and aquatic life experiences",
       icon: "🦈",
-      image: null
+      image: "/images/photo_2026-08-11_00-36-36.jpg"
     },
     { 
       name: "WORLD-CLASS RACE CIRCUIT", 
@@ -19,13 +19,13 @@ const Destinations = () => {
       name: "CHAMPIONSHIP GOLF COURSE", 
       desc: "integrated into the landscape",
       icon: "⛳",
-      image: null
+      image: "/images/photo_2026-08-11_00-37-14.jpg"
     },
     { 
       name: "MULTIPURPOSE ARENA", 
       desc: "for concerts, sports and large-scale events",
       icon: "🏟️",
-      image: null
+      image: "/images/photo_2026-08-10_21-50-00.jpg"
     },
     { 
       name: "SURF POOL & WATER FACILITY", 
@@ -37,7 +37,7 @@ const Destinations = () => {
       name: "DEDICATED EQUESTRIAN FACILITIES", 
       desc: "for sport, leisure and events",
       icon: "🐎",
-      image: null
+      image: "/images/photo_2026-08-11_00-37-24.jpg"
     }
   ];
 

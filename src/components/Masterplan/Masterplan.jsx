@@ -12,6 +12,12 @@ const Masterplan = () => {
             <span className="section-tag">- - The Masterplan - -</span>
             <h2>THE MASTERPLAN</h2>
             <p className="section-subtitle">Designed as a City, Planned as a Community</p>
+            <div className="masterplan-banner">
+              <img src="/images/photo_2026-08-11_00-37-04.jpg" alt="Aerial Masterplan Overview" />
+              <div className="masterplan-banner-caption">
+                <span>MASTERPLAN AERIAL CONCEPT</span>
+              </div>
+            </div>
           </div>
           <div className="masterplan-desc">
             <p>
