@@ -6,32 +6,38 @@ const Destinations = () => {
     { 
       name: "PUBLIC AQUARIUM", 
       desc: "showcasing marine and aquatic life experiences",
-      icon: "🦈" 
+      icon: "🦈",
+      image: null
     },
     { 
       name: "WORLD-CLASS RACE CIRCUIT", 
       desc: "designed for motorsport and major events",
-      icon: "🏁" 
+      icon: "🏁",
+      image: "/images/photo_2026-08-10_21-47-24.jpg" 
     },
     { 
       name: "CHAMPIONSHIP GOLF COURSE", 
       desc: "integrated into the landscape",
-      icon: "⛳" 
+      icon: "⛳",
+      image: null
     },
     { 
       name: "MULTIPURPOSE ARENA", 
       desc: "for concerts, sports and large-scale events",
-      icon: "🏟️" 
+      icon: "🏟️",
+      image: null
     },
     { 
       name: "SURF POOL & WATER FACILITY", 
       desc: "water experience facility for recreation and training",
-      icon: "🌊" 
+      icon: "🌊",
+      image: "/images/photo_2026-08-10_21-50-28.jpg"
     },
     { 
       name: "DEDICATED EQUESTRIAN FACILITIES", 
       desc: "for sport, leisure and events",
-      icon: "🐎" 
+      icon: "🐎",
+      image: null
     }
   ];
 
@@ -51,7 +57,13 @@ const Destinations = () => {
         
         <div className="dest-grid">
           {experiences.map((exp, index) => (
-            <div className="dest-card" key={index}>
+            <div className={`dest-card ${exp.image ? 'has-image' : ''}`} key={index}>
+              {exp.image && (
+                <div className="dest-card-bg">
+                  <img src={exp.image} alt={exp.name} />
+                  <div className="dest-card-overlay"></div>
+                </div>
+              )}
               <div className="dest-card-inner">
                 <span className="dest-icon">{exp.icon}</span>
                 <h4>{exp.name}</h4>

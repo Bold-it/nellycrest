@@ -113,8 +113,8 @@
 .pillar-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
-  padding: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -126,14 +126,41 @@
   border-color: var(--color-gold, #cfa86e);
 }
 
-.pillar-badge {
+.pillar-img-box {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.pillar-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.pillar-card:hover .pillar-img-box img {
+  transform: scale(1.06);
+}
+
+.pillar-badge-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(13, 15, 18, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--color-gold, #cfa86e);
+  color: var(--color-gold, #cfa86e);
   font-size: 0.75rem;
   letter-spacing: 2px;
-  color: var(--color-gold, #cfa86e);
-  text-transform: uppercase;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
   font-weight: 600;
-  display: block;
-  margin-bottom: 0.5rem;
+}
+
+.pillar-card-header {
+  padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .pillar-card-header h3 {
@@ -149,7 +176,8 @@
   font-weight: 400;
   margin-bottom: 1.25rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding-bottom: 0.75rem;
+.pillar-body {
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .pillar-body p {

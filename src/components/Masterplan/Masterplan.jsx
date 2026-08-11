@@ -50,8 +50,11 @@ const Masterplan = () => {
           <div className="pillars-grid">
             {/* Pillar 1: A Place to Live */}
             <div className="pillar-card">
+              <div className="pillar-img-box">
+                <img src="/images/photo_2026-08-10_21-50-11.jpg" alt="A Place to Live - Residential Environments" />
+                <span className="pillar-badge-overlay">PILLAR 01</span>
+              </div>
               <div className="pillar-card-header">
-                <span className="pillar-badge">PILLAR 01</span>
                 <h3>A PLACE TO LIVE</h3>
                 <h4>Homes Designed Around Life</h4>
               </div>
@@ -70,8 +73,11 @@ const Masterplan = () => {
 
             {/* Pillar 2: A Place to Work */}
             <div className="pillar-card">
+              <div className="pillar-img-box">
+                <img src="/images/photo_2026-08-10_21-50-00.jpg" alt="A Place to Work - Commercial Environments" />
+                <span className="pillar-badge-overlay">PILLAR 02</span>
+              </div>
               <div className="pillar-card-header">
-                <span className="pillar-badge">PILLAR 02</span>
                 <h3>A PLACE TO WORK</h3>
                 <h4>Creating Space for Opportunity</h4>
               </div>
@@ -93,8 +99,11 @@ const Masterplan = () => {
 
             {/* Pillar 3: A Place to Connect */}
             <div className="pillar-card">
+              <div className="pillar-img-box">
+                <img src="/images/photo_2026-08-10_21-50-42.jpg" alt="A Place to Connect - Community Spaces" />
+                <span className="pillar-badge-overlay">PILLAR 03</span>
+              </div>
               <div className="pillar-card-header">
-                <span className="pillar-badge">PILLAR 03</span>
                 <h3>A PLACE TO CONNECT</h3>
                 <h4>Community at the Centre</h4>
               </div>
